@@ -1,0 +1,117 @@
+/***
+ * Created by: Mienard Lumaad
+ * Date: May 15, 2012
+ * Website: http://themepixels.com/
+***/
+
+@import url('../fonts/roboto.css');
+@import url('plugins/jquery.alerts.css');
+@import url('plugins/uniform.tp.css');
+@import url('plugins/jquery.ui.css');
+@import url('plugins/jquery.ui.autocomplete.css');
+@import url('plugins/fullcalendar.css');
+@import url('plugins/colorbox.css');
+@import url('plugins/colorpicker.css');
+@import url('plugins/jquery.jgrowl.css');
+@import url('plugins/jquery.tagsinput.css');
+@import url('plugins/ui.spinner.css');
+@import url('plugins/jquery.chosen.css');
+
+/***** 13. DASHBOARD STYLES *****/
+/********************************/
+
+.shortcuts { list-style: none; }
+.shortcuts li { 
+	float: left; margin-right: 40px; margin-bottom: 40px; width: 220px; height: 220px; background: #eee; 
+	padding: 10px; -moz-border-radius: 2px; -webkit-border-radius: 2px;  border-radius: 2px; position: relative; 
+	-moz-box-shadow: inset 1px 1px 2px #ccc; -webkit-box-shadow: inset 1px 1px 2px #ccc; box-shadow: inset 1px 1px 2px #ccc;
+}
+.shortcuts li a { 
+	width: 196px; height: 196px; display: block; background-color: #fff; background-repeat: no-repeat; background-position: center 10px; 
+	border: 1px solid #fff; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+}
+.shortcuts li a:hover { border-color: #FB9337; }
+.shortcuts li a span { 
+	text-align: center; display: block; padding-top: 180px; font-family: 'RobotoBoldCondensed', Arial, Helvetica, sans-serif; 
+}
+.shortcuts li a.map { background-image: url(../images/map.png); }
+.shortcuts li a.new { background-image: url(../images/new.png); }
+.shortcuts li a.list { background-image: url(../images/list.png); }
+.shortcuts li a.logout { background-image: url(../images/logout.png); }
+
+
+.toplist { list-style: none; }
+.toplist li { 
+	display: block; margin-bottom: 10px; border: 1px solid #ddd; overflow: hidden; -moz-border-radius: 2px; 
+	-webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1); line-height: 21.5px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1); box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.toplist li a { overflow: hidden; display: block; }
+.toplist li a:hover { color: #68768d; }
+.toplist li .left { display: block; padding: 10px; }
+.toplist li .right { background: #fcfcfc; display: block; border-left: 1px solid #ddd; padding: 20px 10px; text-align: center; }
+.toplist li .title { 
+	font-family: 'RobotoBoldCondensed', Arial, Helvetica, sans-serif; 
+	font-size: 14px; color: #32415A; display: block; 
+}
+.toplist li .desc { color: #FB9337; font-weight: bold; font-size: 11px; }
+
+.overviewhead { 
+	padding: 10px; border: 1px solid #ddd; background: #fcfcfc;  -moz-border-radius: 2px; -webkit-border-radius: 2px; min-height: 32px;
+	border-radius: 2px; -moz-box-shadow: inset 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff;
+}
+.overviewselect { float: right; margin-top: 1px; }
+.overviewhead input { border: 1px solid #ccc; padding: 8px 5px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+
+.overviewtable tr td, .overviewtable tr th { text-align: right !important; }
+.overviewtable tbody tr td { font-size: 24px; color: #111; font-family: 'RobotoBoldCondensed', Arial, Helvetica, sans-serif; }
+
+
+/***** 16. WIDGET BOX STYLES *****/
+/*********************************/
+
+.widgetbox .title { margin: 20px 0; }
+.widgetbox .title h3 { 
+	font-size: 16px; font-family: 'RobotoBoldCondensed', Arial, Helvetica, sans-serif; font-weight: normal; }
+.widgetbox .widgetcontent { line-height: 21px; }
+.widgetcontent ul.linklist { list-style: none; }
+.widgetcontent ul.linklist li { border-bottom: 1px dotted #ddd; padding: 1px 0; }
+.widgetcontent ul.linklist li a { display: block; padding: 2px 5px; color: #666; }
+.widgetcontent ul.linklist li a:hover { background: #f7f7f7; text-decoration: none; }
+
+.widgetbox .titlehover h2 span { background: #333 url(../images/icons/arrow.png) no-repeat right; }
+.widgetbox .widgettoggle { overflow: hidden; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+
+.widgetbox .listthumb { list-style: none; margin: 0; }
+.widgetbox .listthumb li { padding: 0; margin: 8px 0; }
+.widgetbox .listthumb img { vertical-align: middle; }
+.widgetbox .thumb { list-style: none; margin: 0; }
+.widgetbox .thumb li { display: inline-block; padding: 0; margin-right: 5px; }
+
+.widgetbox .widgetoptions { 
+	padding: 10px; border: 1px solid #ddd; border-bottom: 0; background: #f7f7f7; position: relative;
+	-moz-box-shadow: inset 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff;
+}
+.widgetbox .widgetoptions a { 
+	padding: 5px 15px; display: inline-block; border: 1px solid #ccc; background: #fff; font-weight: bold; font-size: 11px; color: #333; 
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: 0 1px 0 #fff; 
+	-webkit-box-shadow: 0 1px 0 #fff; box-shadow: 0 1px 0 #fff; line-height: 21px; 
+}
+.widgetbox .widgetoptions a:hover { 
+	border: 1px solid #bbb; background-color: #f7f7f7; -moz-box-shadow: inset 0 1px 0 #fff; 
+	-webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff;
+}
+.widgetbox .widgetoptions .right { float: right; }
+
+.contentwrapper .widgetbox { margin-bottom: 20px; margin-top: 0; }
+
+.userlistwidget { border: 1px solid #ddd; }
+.userlistwidget ul { list-style: none; }
+.userlistwidget ul li { font-size: 11px; line-height: 18px; border-bottom: 1px dashed #ddd; padding: 10px; }
+.userlistwidget ul li:last-child { border-bottom: 0; }
+.userlistwidget ul li .avatar { float: left; margin-right: 10px; padding: 2px; border: 1px solid #eee; }
+.userlistwidget ul li a { font-weight:  bold; }
+.userlistwidget .more { 
+	display: block; text-align: center; background: #eee; color: #069; padding: 5px 0; font-size: 10px; 
+	 font-weight: bold; border-top: 1px solid #ddd; }
+.userlistwidget .more:hover { text-decoration: none; background: #e7e7e7; }
